@@ -3,7 +3,7 @@
 age=35
 weight=65
 gender="female"
-cr=80 #serum creatinine concentration in μmol/l
+cr=80 #serum creatine concentration in μmol/l
 #input validation
 is_valid=True
 #validate age
@@ -14,9 +14,9 @@ if age >= 100:
 if weight <= 20 or weight >=80:
     print("Error:Weight is invalid(must between 20 and 80kg)")
     is_valid=False
-#Validate creatinine concentration
+#Validate creatine concentration
 if cr<=0 or cr >= 100:
-    print("Error: Creatinine concentration(Cr) is invalid (must be between 0 and 100μmol/l)")
+    print("Error: Creatine concentration(Cr) is invalid (must be between 0 and 100μmol/l)")
     is_valid=False
 #Validate gender
 if gender not in ["male","female"]:
@@ -30,4 +30,4 @@ if is_valid:
     else:
         crcl=crcl_male
     #print result with 2 decimal places for readability
-    print(f"Creatinine Clearance (CrCl):{crcl:.2f} ml/min")
+    print(f"Creatine Clearance (CrCl):{crcl:.2f} ml/min")
