@@ -15,7 +15,11 @@ print("Population change 2014-2024:",e)
 print("Is d greater than e:",d>e)
 #d=0.25, e=0.22. e<d, growth slow down
 #Scotland's population growth is  slowing down: the population increase from 2014-2024 is less than that from 2004-2014.
+<<<<<<< HEAD
 #comment: the population growth is decelerating.
+=======
+#population growth is decelerating.
+>>>>>>> 0cb361772a17d6ff6a6c790f55ca65e0540439d0
 #4.2 Boolean operations
 #Define boolean variables X and Y
 X=True
