@@ -2,7 +2,7 @@
 #define patient data
 age=35
 weight=65
-gender="female"
+gender="male"
 cr=80 #serum creatine concentration in μmol/l
 #input validation
 is_valid=True
