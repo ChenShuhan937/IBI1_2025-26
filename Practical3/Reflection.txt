@@ -1,1 +1,2 @@
 This practical helped me understand how to use Git and GitHub for version control.
+Although I didn't know how this work at first, I finally understood it with the help of my classmate.
