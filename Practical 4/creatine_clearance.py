@@ -20,8 +20,8 @@ if cr<=0 or cr >= 100:
     is_valid=False
 #Validate gender
 if gender not in ["male","female"]:
-    print:("Error:Gender is invalid (must be'male' or 'female')")
-    is_valid:False
+    print("Error:Gender is invalid (must be'male' or 'female')")
+    is_valid=False
 #Calculate and display result if all inputs are valid
 if is_valid:
     crcl_male=(140-age)*weight/(72*cr)
