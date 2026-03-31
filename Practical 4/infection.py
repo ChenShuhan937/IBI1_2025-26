@@ -18,7 +18,7 @@ for day in range(1, days):
     susceptible-=new_infected
     #keep current infection number in record
     infected_history.append(infected)
- #print the data for the first five days to check if the code is correct   
+#print the data for the first five days to check if the code is correct   
 print("Day | Infected")
 for i in range (5):
     print(f"{i+1} | {infected_history[i]:.2f}")
