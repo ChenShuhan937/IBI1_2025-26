@@ -1,0 +1,7 @@
+Practical 9 Reflection
+This practical was about building stochastic SIR models to simulate infection spread. 
+The basic SIR model was straightforward after understanding random choice and population updates. 
+The vaccination part helped me understand herd immunity intuitively. 
+The spatial 2D model was more challenging, especially handling neighbors and state updates. 
+I learned how to turn real-world problems into probabilistic simulations and use numpy for random processes and grid operations. 
+The most important thing I learned is how stochastic models behave differently each run and how parameters like beta and gamma shape the outbreak.
