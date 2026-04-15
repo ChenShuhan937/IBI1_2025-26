@@ -2,12 +2,12 @@
 import numpy as np
 import matplotlib.pyplot as plt 
 #define the basic variables of the model, one for each of the population
-N=10000
-S=N-1
-I=1
-R=0
+N=10000 #total number of people
+S=N-1 #the number of susceptible people 
+I=1 #the initial infected number
+R=0 #the initial recovered number
 
-beta=0.3
+beta=0.3 
 gamma=0.05
 #record history
 S_history=[S]
@@ -23,6 +23,7 @@ for t in range(1000):
     S -= new_infected
     I += new_infected-new_recovered
     R += new_recovered
+    #record the changes in number after each loop
     S_history.append(S)
     I_history.append(I)
     R_history.append(R)
