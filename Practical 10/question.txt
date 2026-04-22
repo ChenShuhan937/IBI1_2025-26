@@ -1,0 +1,3 @@
+Question: What was the distribution of DALYs across all countries in 2019?
+Code line number in dalys.py: Line 70
+Result discussion: The histogram shows that most countries have a low to moderate DALYs rate, with only a few countries having very high DALYs values. This is consistent with expectations, as high DALYs rates are usually seen in countries with greater disease burden.
