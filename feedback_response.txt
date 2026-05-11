@@ -1,0 +1,8 @@
+# feedback_response.txt
+
+I have reviewed the formative feedback on Weeks 3–5 practicals.
+Based on the comments, I have:
+1. Corrected the population size in the infection model script, and simplified the model to focus only on infection spread without recovery.
+2. Enhanced the population growth bar chart for Week 5.
+3. Added clearer pseudocode and comments to all scripts.
+These changes are committed to GitHub.
