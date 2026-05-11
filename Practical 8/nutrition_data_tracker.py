@@ -35,9 +35,9 @@ def calculate_daily_nutrition(food_list):
 
     # Check warnings for over limit
     if total_cal > 2500:
-        print("⚠️ Warning: Calories exceed 2500 kcal!")
+        print("Warning: Calories exceed 2500 kcal!")
     if total_fat > 90:
-        print("⚠️ Warning: Fat exceeds 90 g!")
+        print("Warning: Fat exceeds 90 g!")
 
 
 print("=== Task 2 Example Output ===")
