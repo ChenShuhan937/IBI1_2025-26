@@ -37,6 +37,6 @@ plt.ylabel('Number of people')
 plt.title('Stochastic SIR Model')
 plt.legend()
 #Save the plot
-plt . savefig ("SIR_plot.png", format="png")
+plt.savefig ("SIR_plot.png", format="png")
 #Show the plot
 plt.show()

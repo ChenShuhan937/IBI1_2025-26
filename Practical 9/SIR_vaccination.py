@@ -15,7 +15,7 @@ for r in vacc_rates:
     I = 1
     R = 0
     V = int(N*r)
-    S = N - V - 1
+    S = max(N - V - 1, 0)
 #record history
     I_history=[I]
 
@@ -39,15 +39,14 @@ for r in vacc_rates:
     
         I_history.append(I)
 
-#Draw the figure
-
-
+    #Draw the figure
     plt.plot(I_history, label=f'{int(r*100)}% vaccinated')
+
 plt.xlabel('Time')
 plt.ylabel('Infected people')
 plt.title('Effect of Vaccination')
 plt.legend()
 #Save the plot
-plt . savefig ("SIR_vaccination_plot.png", format="png")
+plt.savefig ("SIR_vaccination_plot.png", format="png")
 #Show the plot
 plt.show()
