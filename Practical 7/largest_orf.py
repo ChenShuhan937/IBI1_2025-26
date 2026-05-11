@@ -29,5 +29,6 @@ for start_pos in range(len(seq) - len(start_codon) + 1):
                     #Stop after first stop codon
                 break
 print(f"The longest ORF in the sequence:{longest_orf}") 
-print(f"Length of the longest ORF(nucleotides): {max_length}")               
+print(f"Length of the longest ORF(nucleotides): {max_length}")   
+
 

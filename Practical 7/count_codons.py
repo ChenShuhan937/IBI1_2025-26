@@ -67,7 +67,18 @@ with open(input_file, 'r') as f:
                 for pos in range(start_pos, final_stop_pos, 3):
                     codon = current_seq[pos:pos+3]
                     codon_count[codon] += 1
-
+#Combine all the condons with low frequency into "other" group so as to ensure the clarity of figure.
+total = sum(codon_count.values())
+threshold = 0.01  # Condons under 1% will be included in the "other" group
+main_codons = {}
+other_count = 0
+for codon, count in codon_count.items():
+    if count / total >= threshold:
+        main_codons[codon] = count
+    else:
+        other_count += count
+if other_count > 0:
+    main_codons['Other'] = other_count
 # 5. Print codon count results 
 print(f"\nCodon counts upstream of {user_stop} (longest ORF only):")
 for codon, count in sorted(codon_count.items(), key=lambda x: x[1], reverse=True):
@@ -86,20 +97,20 @@ labels = list(main_codons.keys())
 sizes = list(main_codons.values())
 colors = plt.cm.Set3(range(len(labels)))  # Color palette for distinct slices
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(10,10))
 wedges, texts, autotexts = ax.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%',
-                                   startangle=90, labeldistance=1.05)
+                                   startangle=90, labeldistance=1.1, pctdistance=0.8, textprops={'fontsize': 8})
 # Customize text for readability
 for autotext in autotexts:
     autotext.set_color('black')
-    autotext.set_fontsize(8)
+    
 
 # Add title and labels (well-labelled as required)
 ax.set_title(f"Codon Frequency Upstream of {user_stop} (Longest ORF)", fontsize=14, pad=20)
 # Save pie chart to file 
 piechart_file = f"codon_frequency_{user_stop}.png"
 plt.tight_layout()
-plt.savefig(piechart_file, dpi=300, bbox_inches='tight')
+plt.savefig(piechart_file, dpi=300)
 plt.close()  # Close plot to avoid screen display
 
 # 7. Print completion message
