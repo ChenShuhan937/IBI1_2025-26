@@ -1,0 +1,22 @@
+Practical 13 Summary
+1. Human DLX5 protein
+   - Length: 289 amino acids
+   - Subcellular localisation: Nucleus
+
+2. Online BLAST results
+   - Percentage identity range: ~52% – 100%
+   - Human vs mouse DLX5 identity: ~96.5%
+
+3. Python alignment results
+   - Human DLX5 vs Mouse DLX5:
+     BLOSUM62 score = 1490
+     Percentage identity = 96.54%
+   - Human DLX5 vs Random sequence:
+     BLOSUM62 score = -273
+     Percentage identity = 4.15%
+   - Mouse DLX5 vs Random sequence:
+     BLOSUM62 score = -275
+     Percentage identity = 4.15%
+
+4. Conclusion
+Human DLX5 and mouse DLX5 are highly homologous, with very high alignment score and identity. Random sequences show extremely low similarity, confirming that the homology between human and mouse DLX5 is biologically meaningful.
